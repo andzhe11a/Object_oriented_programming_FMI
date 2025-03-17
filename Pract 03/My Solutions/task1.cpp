@@ -7,6 +7,7 @@ void printFile(const char* fileName)
   if (!file.is_open())
   {
     std::cout << "Could not open file " << fileName << std::endl;
+    return;
   }
 
   char line[256];

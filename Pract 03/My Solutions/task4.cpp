@@ -7,6 +7,7 @@ void includeSumAndProdInFile (unsigned a, unsigned b, unsigned c, const char* fi
   if (!file.is_open())
   {
     std::cout << "Could not open file " << fileName << std::endl;
+    return;
   }
 
   unsigned sum = a + b + c;

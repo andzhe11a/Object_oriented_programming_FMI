@@ -7,6 +7,7 @@ void copyFileContent(const char* sourceFile, const char* destinationFile)
   if (!source.is_open())
   {
     std::cout << "Could not open source file " << source << std::endl;
+    return;
   }
 
   std::ofstream destination(destinationFile);
@@ -14,6 +15,7 @@ void copyFileContent(const char* sourceFile, const char* destinationFile)
   {
     std::cout << "Could not open destination file " << destination << std::endl;
     source.close();
+    return;
   }
 
   char line[256];
