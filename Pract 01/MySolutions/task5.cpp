@@ -23,17 +23,17 @@ void printArray (int* arr, int size)
   std::cout << "]" << std::endl;
 }
 
-int multiplyByTwo(int a)
-{
-  return a * 2;
-}
-
 void map(int* arr, int size, int(*func)(int))
 {
   for (int i = 0; i < size; i++)
   {
     arr[i] = func(arr[i]);
   }
+}
+
+int multiplyByTwo(int a)
+{
+  return a * 2;
 }
 
 int main() {
